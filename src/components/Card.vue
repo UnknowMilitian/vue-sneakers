@@ -24,15 +24,14 @@
 </template>
 
 <script setup>
-import { inject } from 'vue'
-
-const props = defineProps({
+defineProps({
   id: Number,
   imageUrl: String,
   title: String,
   price: Number,
   isFavorite: Boolean,
   isAdded: Boolean,
-  onClickFavorite: Function
+  onClickFavorite: Function,
+  onClickAdd: Function
 })
 </script>
