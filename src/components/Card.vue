@@ -5,6 +5,7 @@
     >
       <div class="absolute top-8 left-8">
         <img
+          v-if="onClickFavorite"
           @click="onClickFavorite"
           :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'"
           alt="Favorite"
@@ -17,7 +18,12 @@
           <span class="text-slate-300">Цена:</span>
           <span class="font-bold">{{ price }} руб.</span>
         </div>
-        <img @click="onClickAdd" :src="!isAdded ? '/plus.svg' : '/checked.svg'" alt="Plus" />
+        <img
+          v-if="onClickAdd"
+          @click="onClickAdd"
+          :src="!isAdded ? '/plus.svg' : '/checked.svg'"
+          alt="Plus"
+        />
       </div>
     </div>
   </div>
