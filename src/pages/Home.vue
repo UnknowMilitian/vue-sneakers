@@ -131,10 +131,10 @@ watch(filters, fetchItems)
 </script>
 
 <template>
-  <div class="flex justify-between items-center mb-8">
+  <div class="flex flex-col gap-4 md:flex-row md:justify-between md:gap-0 items-center mb-8">
     <h2 class="text-3xl font-bold">Все Кроссовки</h2>
 
-    <div class="flex gap-4">
+    <div class="flex flex-col md:flex-row gap-4">
       <select
         @change="onChangeSelect"
         class="py-2 px-3 border rounded-md outline-none"

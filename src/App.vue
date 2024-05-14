@@ -39,10 +39,10 @@ provide('cart', { cart, closeDrawer, openDrawer, addToCart, removeFromCard })
 <template>
   <DrawerVue v-if="drawerOpen" :total-price="totalPrice" :vatPrice="vatPrice" />
 
-  <div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+  <div class="bg-white w-[95%] xl:w-4/5 m-auto rounded-md md:rounded-xl shadow-xl my-5 md:my-14">
     <Header :total-price="totalPrice" @open-drawer="openDrawer" />
 
-    <div class="p-10">
+    <div class="p-10 px-4 md:px-10">
       <router-view></router-view>
     </div>
   </div>

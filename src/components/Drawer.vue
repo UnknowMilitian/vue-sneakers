@@ -42,7 +42,7 @@ const buttonDisabled = computed(() => isCreating.value || carIsEmpty.value)
 
 <template>
   <div class="fixed top-0 left-0 h-full w-full bg-black z-10 opacity-70"></div>
-  <div class="bg-white w-96 fixed h-full overflow-y-scroll right-0 top-0 z-20 p-8">
+  <div class="bg-white w-full md:w-96 fixed h-full overflow-y-scroll right-0 top-0 z-20 p-8">
     <DrawerHead />
 
     <div v-if="!totalPrice || orderId" class="flex h-[75vh] items-center">
